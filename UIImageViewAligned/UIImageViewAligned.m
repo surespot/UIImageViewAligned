@@ -69,6 +69,12 @@
     }
 }
 
+// This is an fix for the double image bug on iPhone5/iOS 7.1. I think it might cause problems in the future
+- (CALayer*)layer
+{
+    return nil;
+}
+
 - (UIImage*)image
 {
     return _realImageView.image;
